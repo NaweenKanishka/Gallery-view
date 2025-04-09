@@ -7,16 +7,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     height: auto;
     gap: 10px;
     background-color: gray;
 }
+.gallery-container{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   
+
+}
 .gallery-items{
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     gap: 5px;
     transition: transform 0.3s ease;
 }
@@ -30,16 +38,10 @@
 
 @media screen and (max-width: 768px) {
   
-    .gallery-items{
-        flex-wrap: wrap;
-    }
     .gall-card{
-        width: 32%;
-        height: 32%;
+        width: 50%;
+        height: 50%;
     }
-    .gall-card img{
-        width: 100%;
-        height: auto;
-    }
+   
     
 }
